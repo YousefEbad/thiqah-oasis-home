@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 221 85% 27%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,41 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-roboto;
   }
+}
+
+.dropdown-menu {
+  @apply invisible absolute z-50 opacity-0 bg-white shadow-lg rounded-md py-2 mt-2 transition-all duration-300 transform origin-top scale-95;
+}
+
+.dropdown:hover .dropdown-menu {
+  @apply visible opacity-100 scale-100;
+}
+
+.service-card:hover {
+  @apply transform -translate-y-1 transition-transform duration-300;
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(10, 59, 128, 0.9), rgba(7, 42, 92, 0.7));
+}
+
+.arabic {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+.english {
+  font-family: 'Roboto', sans-serif;
+  direction: ltr;
+}
+
+.navbar-link {
+  @apply relative font-medium text-gray-600 hover:text-thiqah-blue transition-colors after:absolute after:bottom-0 after:left-0 after:bg-thiqah-blue after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300;
+}
+
+/* Animation classes */
+.animate-fade-in {
+  @apply animate-fade-in;
 }
