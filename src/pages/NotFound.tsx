@@ -30,7 +30,7 @@ const NotFound = () => {
     }
   };
 
-  const currentContent = language === 'ar' ? content.ar : content.en';
+  const currentContent = language === 'ar' ? content.ar : content.en;
 
   return (
     <div className={`min-h-screen flex flex-col ${language === 'ar' ? 'arabic' : 'english'}`}>

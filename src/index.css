@@ -127,6 +127,4 @@
 }
 
 /* Animation classes */
-.animate-fade-in {
-  @apply animate-fade-in;
-}
+/* Removed the circular dependency here */
