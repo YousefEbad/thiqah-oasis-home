@@ -39,15 +39,15 @@ const CallToAction: React.FC<CTAProps> = ({ language }) => {
           <div className={`flex flex-col sm:flex-row justify-center gap-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
             <Button
               size="lg"
-              className="bg-white text-thiqah-blue hover:bg-gray-100 transition-colors"
+              className="border-[#fff] border md:max-w-[160px] lg:max-w-[160px] xl:max-w-[160px] 2xl:max-w-[160px] bg-white text-thiqah-blue hover:bg-[transparent] hover:text-[#000] transition-colors"
             >
               {currentContent.buttonText}
             </Button>
             
             <Button
               size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10 transition-colors"
+              // variant="outline"
+              className="border-[#fff] border md:max-w-[160px] lg:max-w-[160px] xl:max-w-[160px] 2xl:max-w-[160px] bg-white text-thiqah-blue hover:bg-[transparent] hover:text-[#000] transition-colors"
             >
               {currentContent.trackText}
             </Button>

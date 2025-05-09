@@ -33,18 +33,19 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center justify-center min-h-[90vh] text-center py-20">
-          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-in ${language === 'ar' ? 'font-cairo' : ''}`}>
+          <h1 className={`text-3xl text-[#0a3b80] md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-in ${language === 'ar' ? 'font-cairo' : ''}`}>
             {currentContent.heading}
           </h1>
           
-          <p className={`text-lg md:text-xl max-w-2xl mb-8 text-gray-100 animate-fade-in ${language === 'ar' ? 'font-cairo' : ''}`}>
+          <p className={`text-lg md:text-xl text-[#000] max-w-3xl mb-8 animate-fade-in ${language === 'ar' ? 'font-cairo' : ''}`}>
             {currentContent.subheading}
           </p>
           
           <div className={`flex flex-col sm:flex-row gap-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
             <Button
               size="lg"
-              className="bg-white text-thiqah-blue hover:bg-gray-100 transition-colors px-8 animate-fade-in"
+              variant="outline"
+              className="border-white text-[#0a3b80] md:max-w-[180px] lg:max-w-[180px] xl:max-w-[180px] 2xl:max-w-[180px] hover:bg-white/10 transition-colors px-8 animate-fade-in"
             >
               {currentContent.cta}
             </Button>
@@ -52,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10 transition-colors px-8 animate-fade-in"
+              className="border-white text-[#0a3b80] md:max-w-[180px] lg:max-w-[180px] xl:max-w-[180px] 2xl:max-w-[180px] hover:bg-white/10 transition-colors px-8 animate-fade-in"
             >
               {currentContent.contactBtn}
             </Button>

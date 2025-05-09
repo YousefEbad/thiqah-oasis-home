@@ -65,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
             <a href="/" className="flex items-center">
               <img 
                 src="/public/lovable-uploads/064e0a6f-ab11-467b-913e-c5a44cb4ef3f.png" 
-                className="h-14 w-auto" 
+                className="w-[70px] w-sm-[50px] w-xs-[30px]" 
                 alt="Thiqah Logo" 
               />
               <span className={`ml-2 text-xl font-bold text-thiqah-blue ${language === 'ar' ? 'mr-2 ml-0' : ''}`}>
