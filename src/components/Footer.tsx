@@ -37,11 +37,11 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
       contact: {
         title: "Contact Us",
         address: "Cairo, Egypt",
-        phone: "+20 100 000 0000",
-        email: "info@thiqah.com",
+        phone: "+20 01093237935",
+        email: "ebadaelsayed3030@gmail.com",
         hours: "Sun - Thu: 9:00 AM - 5:00 PM"
       },
-      copyright: "© 2023 Thiqah. All rights reserved."
+      copyright: "© 2022 Thiqah. All rights reserved."
     },
     ar: {
       about: {
@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         email: "info@thiqah.com",
         hours: "الأحد - الخميس: 9:00 صباحًا - 5:00 مساءً"
       },
-      copyright: "© 2023 الثقة. جميع الحقوق محفوظة."
+      copyright: "© 2022 الثقة. جميع الحقوق محفوظة."
     }
   };
 
@@ -91,13 +91,13 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
             <h3 className={`text-xl font-bold mb-4 ${language === 'ar' ? 'font-cairo' : ''}`}>
               {currentContent.about.title}
             </h3>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-2">
               <img 
-                src="/public/lovable-uploads/064e0a6f-ab11-467b-913e-c5a44cb4ef3f.png" 
-                className="h-10 w-auto" 
+                src="/public/lovable-uploads/logo.png" 
+                className="w-[70px]" 
                 alt="Thiqah Logo" 
               />
-              <span className={`ml-2 text-xl font-bold text-white ${language === 'ar' ? 'mr-2 ml-0' : ''}`}>
+              <span className={`text-xl font-bold text-white ${language === 'ar' ? 'ml-0' : ''}`}>
                 {language === 'ar' ? 'الثقة' : 'Thiqah'}
               </span>
             </div>
@@ -188,7 +188,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   <Twitter className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.instagram.com/yousefomar6464/?hl=en" target='blank' className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
