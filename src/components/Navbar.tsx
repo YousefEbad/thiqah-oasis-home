@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/public/logo.png" 
+                src="./logo.png" 
                 className="w-[70px] w-sm-[50px] w-xs-[30px]" 
                 alt="Thiqah Logo" 
               />

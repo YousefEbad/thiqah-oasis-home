@@ -93,7 +93,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
             </h3>
             <div className="flex items-center mb-2">
               <img 
-                src="/public/logo.png" 
+                src="./logo.png" 
                 className="w-[70px]" 
                 alt="Thiqah Logo" 
               />
